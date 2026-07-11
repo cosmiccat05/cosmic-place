@@ -1,7 +1,7 @@
 [
     {
         "quote": "Modern life, well, it's rubbish.",
-        "author": "Damon Albarn"
+        "author": "Blur"
     },
     {
         "quote": "Carpe diem, seize the day, boys. Make your lives extraordinaly.",
@@ -12,7 +12,27 @@
         "author": "Undertale"
     },
     {
-        "quote": "It's you!",
-        "author": "Undertale"
+        "quote": "Talk is cheap. Show me the code.",
+        "author": "Linus Torvalds"
+    },
+    {
+        "quote": "It's dangerous to go alone! Take this.",
+        "author": "The Legend of Zelda (1986)"
+    },
+    {
+        "quote": "Design is not just what it looks like and feels like. Design is how it works.",
+        "author": "Steve Jobs"
+    },
+    {
+        "quote": "We are all in the gutter, but some of us are looking at the stars.",
+        "author": "Oscar Wilde"
+    },
+    {
+        "quote": "Wake me up when September ends.",
+        "author": "Green Day"
+    },
+    {
+        "quote": "We can be heroes, just for one day.",
+        "author": "David Bowie"
     }
 ]
