@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cosmic's Place ✦</title>
+    <link href="https://googleapis.com" rel="stylesheet">
+    <!--Estilos a usar-->
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/style.css">
+    <!--Icon de la pagina, bien random-->
+    <link rel="icon" href="assets/icons/coffee.png" />
+    <script type="module" src="js/main.js"></script>
+</head>
+<body>
+    <header class="header">
+        <nav class="header-nav" aria-label="Main Navigation">
+            <a class="nav-btn" href="#top">Home</a>
+            <button class="nav-btn" id="open-contact">
+                Contact me
+            </button>
+            <button class="nav-btn" id="open-blog">
+                Blog!
+            </button>
+        </nav>
+    </header>
+    <main>
+        <section class="hero" id="top">
+            <p class="hero-decoration" aria-hidden="true">ﾟ･:,｡ﾟ･:,｡★ﾟ･:,｡ﾟ･:,｡☆ﾟ･:,｡ﾟ･:,｡★ﾟ･:,｡ﾟ･:,｡</p>
+            <h1 class="hero-title">Welcome to Cosmic's place</h1>
+            <p class="hero-decoration" aria-hidden="true">ﾟ･:,｡ﾟ･:,｡★ﾟ･:,｡ﾟ･:,｡☆ﾟ･:,｡ﾟ･:,｡★ﾟ･:,｡ﾟ･:,｡</p>
+            <div class="hero-badges">
+                <span class="badge">UX / UI DESIGNER</span>
+                <span class="badge">FRONT-END</span>
+                <span class="badge">MOBILE</span>
+            </div>
+        </section>
+
+        <!--ABOUT ME :D mi fotito va aqui-->
+        <section class="about">
+            <div class="polaroid-wrap">
+                <figure class="polaroid">
+                    <img 
+                    class="polaroid-photo"
+                    src="assets/img/mymy.jpeg" 
+                    alt="Foto de cosmitos">
+                    <figcaption class="polaroid-caption">
+                        <p class="polaroid-name">Meet the real <span class="text-accent">Cosmiccat</span></p>
+                        <p class="polaroid-meta">
+                            20 years <br>
+                            Software Engineer Student <br>
+                            Most interest in UX/UI and Front-End
+                        </p>
+                    </figcaption>
+                </figure>
+            </div>
+
+            <div class="about-intro">
+                <h2>Hi! I’m <span class="text-accent">Cosmiccat</span></h2>
+                <p>
+                    I’m a Software Engineering student passionate about creating digital 
+                    experiences through design and development.
+                </p>
+                <p>
+                    Here you'll find my UX/UI projects, web and mobile applications, and 
+                    a few personal experiments that reflect my journey as I continue learning and building.
+                </p>
+                <p>Feel free to look around!</p>
+
+                <div class="about-cta">
+                    <a class="btn-primary" href="https://www.youtube.com/watch?v=LZqQLXlrhI4">
+                        <img src="assets/icons/carpet.png" alt="" width="16" height="16">
+                        Open UX/UI Portfolio</a>
+                    <a class="btn-primary" href="https://www.youtube.com/watch?v=LZqQLXlrhI4">
+                        <img src="assets/icons/carpet.png" alt="" width="16" height="16">
+                        Open Programming Portfolio</a>
+                    <a class="btn-primary" href="assets/pdf/CV-Lucero-Cubas.pdf" download="">
+                        <img src="assets/icons/download.png" alt="" width="16" height="16">
+                        Download CV</a>
+                </div>
+
+                <p class="about-decoration" aria-hidden="true">ﾟ･:,｡ﾟ･:,｡★ﾟ･:,｡ﾟ･:,｡☆ﾟ･:,｡ﾟ･:,｡★ﾟ･:,｡ﾟ･:,｡･:,｡ﾟ･:,｡★ﾟ･:,｡ﾟ･:,｡☆ﾟ･:,｡ﾟ･:,｡★ﾟ･:,｡ﾟ･:,｡ ｡★ﾟ･:,｡ﾟ</p>
+
+            </div>
+        </section>
+
+        <!--Widgets lol-->
+        <section class="widgets">
+            <!--quotes-->
+            <article class="card" id="quote-widget">
+                <div class="card-header">
+                    <h3 class="card-title">Daily quotes</h3>
+                </div>
+                <blockquote id="quote">
+                    "..."
+                </blockquote>
+                <cite id="author">
+                    — Author
+                </cite>
+                <button class="btn-quote" type="button">New quote</button>
+            </article>
+            <!--factos-->
+            <article class="card" id="facts-widget">
+                <div class="card-header">
+                    <h3 class="card-title">Facts about me</h3>
+                </div>
+                <ul class="facts-list">
+                    <li>
+                        <img src="assets/icons/ubi.png" alt="" aria-hidden="true"/>
+                        Lima - Perú
+                    </li>
+                    <li>
+                        <img src="assets/icons/mando.png" alt="" aria-hidden="true"/>
+                        RPG enjoyer
+                    </li>
+                    <li>
+                        <img src="assets/icons/star.png" alt="" aria-hidden="true"/>
+                        I love space
+                    </li>
+                    <li>
+                        <img src="assets/icons/music.png" alt="" aria-hidden="true"/>
+                        I play several instruments
+                    </li>
+                    <li>
+                        <img src="assets/icons/sparks.png" alt="" aria-hidden="true"/>
+                        I enjoy learning new things everyday
+                    </li>
+                </ul>
+            </article>
+            <!--statusss quo-->
+            <article class="card" id="status-widget">
+                <div class="card-header">
+                    <h3 class="card-title">Status</h3>
+                </div>
+                <div class="status-online">
+                    <img src="assets/icons/online.png" alt="" width="16" height="16">
+                    <span class="online-text">Online</span>
+                </div>
+                <p><strong>Listening to: </strong><span id="song">Morning Glory - Oasis</span></p>
+                <p><strong>Working on: </strong><span id="working">Portfolios</span></p>
+                <div class="coffee">
+                    <strong>Coffee Level:</strong>
+                    <div class="coffee-icons">
+                        <img src="assets/icons/coffee.png" alt="">
+                        <img src="assets/icons/coffee.png" alt="">
+                        <img src="assets/icons/coffee.png" alt="">
+                        <img src="assets/icons/coffee.png" alt="">
+                        <img src="assets/icons/coffee-empty.png" alt="">
+                    </div>
+                </div>
+            </article>
+        </section>
+        
+        
+    </main>
+
+    <footer class="page-footer">
+        <p>
+            Made with ♥ by Cosmic
+        </p>
+        <p>
+            Thanks for visiting my little corner of the internet!
+        </p>
+    </footer>
+
+    <!--Aqui van los modales o los pop ups que apareceran cuando haga click en Contact me y Blog uwu-->
+    <!--Modal: Contact me-->
+    <div class="modal" id="contact-modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Contact me</h2>
+                <button class="close-modal" aria-label="Close modal">
+                    X
+                </button>
+            </div>
+            <div class="modal-body">
+                <section class="contact-column">
+                    <h3>Work & Projects</h3>
+                    <ul class="contact-list">
+                        <li>
+                            <a href="https://github.com/cosmiccat05">
+                                <img src="assets/icons/githu.png" alt="">
+                                cosmiccat05
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.linkedin.com/in/lucero-milagros-cubas-quispe-60aa26338/">
+                                <img src="assets/icons/linked.png" alt="">
+                                Lucero Cubas
+                            </a>
+                        </li>
+                        <li>
+                            <a href="mailto:lumicq1410@gmail.com">
+                                <img src="assets/icons/mail.png" alt="">
+                                lumicq1410@gmail.com
+                            </a>
+                        </li>
+                    </ul>
+                </section>
+                <section class="contact-column">
+                    <h3>Around the web</h3>
+                    <ul class="contact-list">
+                        <li>
+                            <a href="https://www.instagram.com/idk.luulii/">
+                                <img src="assets/icons/ig.png" alt="">
+                                idk.luulii
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://open.spotify.com/user/qaiqlf15z7vs6ej127amt0dtr?si=0416ff16ff0d4484">
+                                <img src="assets/icons/spoty.png" alt="">
+                                cosmiccat05
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="assets/icons/discor.png" alt="">
+                                cosmiccat05
+                            </a>
+                        </li>
+                    </ul>
+                </section>
+            </div>
+            <footer class="modal-footer">
+                   ･:,｡★ﾟ･:,｡ﾟ･:,｡☆ﾟ･:,｡ﾟ･:,｡★
+            </footer>
+        </div>
+    </div>
+    <!--Modal: Blog-->
+    <div class="modal" id="blog-modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Blog</h2>
+                <button class="close-modal" aria-label="Close modal">
+                    X
+                </button>
+            </div>
+            <div class="modal-body">
+                <h3>🚧 Working on it!</h3>
+                <p>Currently writing my first posts...</p>
+                <h3>Come back soon! :)</h3>
+            </div>
+            <footer class="modal-footer">
+                ･:,｡★ﾟ･:,｡ﾟ･:,｡☆ﾟ･:,｡ﾟ･:,｡★
+            </footer>
+        </div>
+    </div>
+</body>
+</html>

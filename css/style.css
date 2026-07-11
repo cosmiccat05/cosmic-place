@@ -1,0 +1,333 @@
+/* ==========================================================
+   Cosmic's Place
+   Personal Portfolio v1.0
+   Designed & Developed by Cosmic
+   ========================================================== */
+
+/*importa la tipografia de gugul*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Press+Start+2P&display=swap');
+
+:root {
+    /*colores*/
+    --color-bg: #FFFCF7;
+    --color-bg-dark-gray: #D2D0CD; /* puntos del fondo, polaroid, X's, barra del nav */
+    --color-bg-gray: #E4E2DF;      /* superficie de tarjetas/widgets/modal */
+    --color-text-primary: #1E1E1E;
+    --color-blue: #0F126D;
+    --color-sky-blue: #A6BCC9;
+    --color-online: #4CAF50;       /* verde de estado online */
+    --color-text-secondary: #5c5c5c;
+
+    /*tipografia */
+    --font-display: 'Press Start 2P', monospace;
+    --font-body: 'Poppins', sans-serif;
+
+    /*tamaño de fuentes*/
+    --fw-regular:400;
+    --fw-semibold:600;
+    --fw-bold:700;
+    
+    /*escala de espaciado*/
+    --space-xs:.5rem;
+    --space-sm:1rem;
+    --space-md:1.5rem;
+    --space-lg:2rem;
+    --space-xl:3rem;
+
+    /*sombras*/
+    --shadow-card: 2px 3px 0 #D2D0CD;
+
+    /*bordes*/
+    --border:2px solid var(--color-text-primary);
+
+    /*agregado de transicion pq si xd*/
+    --transition:.2s ease;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/*scroll bar personalizado JAKSD*/
+::-webkit-scrollbar{
+    width:12px;
+}
+
+::-webkit-scrollbar-track{
+    background:var(--color-bg-dark-gray);
+    border: 2px solid var(--color-text-primary);
+}
+
+::-webkit-scrollbar-thumb{
+    background:var(--color-blue);
+    border:2px solid var(--color-text-primary);
+
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: var(--font-body);
+    font-weight: var(--fw-regular);
+    line-height: 1.5;
+    color: var(--color-text-primary);
+    background-color: var(--color-bg);
+    background-image: radial-gradient(var(--color-bg-dark-gray) 1.5px, transparent 1.5px);
+    background-size: 22px 22px;
+}
+
+h1, h2, h3, h4, p, blockquote, figure {
+    margin: 0;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+    height: auto;
+}
+
+button {
+    font: inherit;
+    cursor: pointer;
+}
+
+/*un agregado para navegacion con teclado entre los botones*/
+button:focus-visible,
+a:focus-visible{
+    outline:2px dashed var(--color-blue);
+    outline-offset:3px;
+
+}
+
+.text-accent {
+    color: var(--color-blue);
+    text-decoration: underline;
+    font-weight: var(--fw-bold);
+}
+
+/*  Header */
+.header {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background-color: var(--color-bg-dark-gray);
+    border-bottom: var(--border);
+}
+
+.header-nav {
+    display: flex;
+    align-items: center;
+    gap: var(--space-sm);
+    padding: var(--space-xs) var(--space-md);
+}
+
+/*Hero */
+.hero {
+    max-width:900px;
+    margin:0 auto;
+    text-align: center;
+    padding: var(--space-xl) var(--space-md) var(--space-lg);
+}
+
+.hero-decoration {
+    color: var(--color-blue);
+    font-size: .75rem;
+    letter-spacing: .05em;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    margin: 0 auto;
+    max-width: 100%;
+}
+
+.hero-title {
+    font-family: var(--font-display);
+    font-weight: var(--fw-regular);
+    font-size: clamp(1.6rem, 4vw, 2.6rem);
+    line-height: 1.6;
+    color: var(--color-text-primary);
+    margin: var(--space-md) 0;
+}
+
+.hero-badges {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: var(--space-sm);
+    margin-top: var(--space-md);
+}
+
+/* About */
+.about {
+    display: grid;
+    grid-template-columns: minmax(220px, 320px) 1fr;
+    gap: var(--space-xl);
+    align-items: start;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: var(--space-xl) var(--space-md);
+}
+
+.polaroid-wrap {
+    display: flex;
+    justify-content: center;
+}
+
+.polaroid {
+    background-color: var(--color-bg);
+    border: var(--border);
+    box-shadow: var(--shadow-card);
+    padding: var(--space-sm) var(--space-sm) var(--space-md);
+    width: 100%;
+    max-width: 320px;
+    transform: rotate(-2deg);
+}
+
+.polaroid-photo {
+    width: 100%;
+    aspect-ratio: 4 / 5;
+    object-fit: cover;
+    border: 1px solid var(--color-bg-dark-gray);
+}
+
+.polaroid-caption {
+    text-align: center;
+    padding-top: var(--space-sm);
+}
+
+.polaroid-name {
+    font-weight: var(--fw-semibold);
+    margin-bottom: var(--space-xs);
+}
+
+.polaroid-meta {
+    font-size: .8rem;
+    line-height: 1.6;
+    color: var(--color-text-secondary);
+}
+
+.about-decoration {
+    text-align:center;
+    color:var(--color-blue);
+    font-size:.9rem;
+    letter-spacing:.12rem;
+    user-select:none;
+    opacity:.9;
+}
+
+.about-intro{
+    display:flex;
+    flex-direction:column;
+    gap:var(--space-md);
+}
+
+.about-intro h2 {
+    font-size: clamp(1.5rem, 3vw, 2rem);
+    font-weight: var(--fw-bold);
+}
+
+.about-intro p {
+    line-height: 1.7;
+}
+
+.about-cta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-sm);
+}
+
+/* Widgets */
+.widgets {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--space-md);
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 var(--space-md) var(--space-xl);
+}
+
+.status-online {
+    display: flex;
+    align-items: center;
+    gap: var(--space-xs);
+    margin-top: var(--space-sm);
+    margin-bottom: var(--space-sm);
+}
+
+.online-text {
+    color: var(--color-online);
+    font-weight: var(--fw-semibold);
+    font-size: .9rem;
+}
+
+.coffee {
+    margin-top: var(--space-sm);
+}
+
+.coffee-icons {
+    display: flex;
+    gap: var(--space-xs);
+    margin-top: var(--space-xs);
+}
+
+.coffee-icons img {
+    width: 22px;
+    height: 22px;
+}
+
+/* Footer */
+.page-footer {
+    text-align: center;
+    padding: var(--space-lg) var(--space-md);
+    border-top: var(--border);
+    background-color: var(--color-bg-dark-gray);
+}
+
+.page-footer p {
+    font-size: .85rem;
+    margin-bottom: var(--space-xs);
+}
+
+.page-footer p:last-child{
+    margin-bottom:0;
+}
+
+/* RESPONSIVE */
+@media (max-width: 800px) {
+    .about {
+        grid-template-columns: 1fr;
+        justify-items: center;
+        text-align: center;
+    }
+
+    .about-cta {
+        justify-content: center;
+    }
+
+    .widgets {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 500px) {
+    .header-nav {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
