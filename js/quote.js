@@ -1,7 +1,6 @@
-// quote.js — widget de "Daily quotes"
 import { $, fetchJSON, randomItem } from './utils.js';
 
-const QUOTES_URL = 'assets/quotes.json'; // ajustá esta ruta si quotes.json no está en la raíz del proyecto
+const QUOTES_URL = 'assets/quotes.json'; 
 
 let quotes = [];
 let lastIndex = -1;

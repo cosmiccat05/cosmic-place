@@ -1,4 +1,3 @@
-// popup.js — abrir/cerrar los modales (contact-modal, blog-modal)
 import { $, $$ } from './utils.js';
 
 const TRIGGERS = [
@@ -8,7 +7,6 @@ const TRIGGERS = [
 
 function openModal(modal) {
     modal.classList.add('is-open');
-    document.body.style.overflow = 'hidden'; // evita el scroll de fondo con el modal abierto
 }
 
 function closeModal(modal) {
@@ -17,7 +15,6 @@ function closeModal(modal) {
 }
 
 export function initModals() {
-    // botones que abren cada modal
     TRIGGERS.forEach(({ buttonId, modalId }) => {
         const button = $(buttonId);
         const modal = $(modalId);
@@ -27,19 +24,16 @@ export function initModals() {
     });
 
     $$('.modal').forEach((modal) => {
-        // botón "X"
         const closeBtn = $('.close-modal', modal);
         if (closeBtn) {
             closeBtn.addEventListener('click', () => closeModal(modal));
         }
 
-        // click afuera del modal-content (en el fondo oscuro) también cierra
         modal.addEventListener('click', (event) => {
             if (event.target === modal) closeModal(modal);
         });
     });
 
-    // tecla Escape cierra cualquier modal abierto
     document.addEventListener('keydown', (event) => {
         if (event.key !== 'Escape') return;
         $$('.modal.is-open').forEach(closeModal);
