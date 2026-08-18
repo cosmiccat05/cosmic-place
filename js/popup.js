@@ -2,7 +2,6 @@ import { $, $$ } from './utils.js';
 
 const TRIGGERS = [
     { buttonId: '#open-contact', modalId: '#contact-modal' },
-    { buttonId: '#open-blog', modalId: '#blog-modal' },
 ];
 
 function openModal(modal) {
